@@ -18,6 +18,7 @@ app.set("view engine", 'ejs')
 const PORT = process.env.PORT || 3001;
 connectDB();
 
+console.log(process.env)
 
 app.use('/api/files', filesRoute);
 app.use('/files', showRoute);
